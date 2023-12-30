@@ -1,0 +1,51 @@
+
+Hojas:
+Dashboard (Totales y evolucion)
+Trabajador
+
+Totales:
+-Horas (Facturadas, Ejecutadas)
+-Importes 
+
+Evolutivos:
+-Facturacion mensual
+
+Segmentadores
+-Proyecto
+-Cliente
+-Trabajador
+
+Metricas mas interesantes
+- ¿Que trabajador ha facturado mas?
+- ¿Que trabajador es mas rentable?
+- ¿Que trabajador es menos rentable?
+- ¿Que cliente es más rentable?
+- ¿Que cliente tiene mayor facturacion?
+
+
+¿Que % de subida puede ganarse?
+¿Compensacion economica si llega a cierta facturacion?
+
+
+Calendario = ADDCOLUMNS( 
+                        CALENDARAUTO( ),
+                    "Año", YEAR([Date]),
+                    "Mes", MONTH([Date]),
+                    "Mes Nombre", FORMAT([Date],"mmmm"),
+                    "Trimestre", QUARTER([Date]),
+                    "Semana", WEEKNUM([Date]),
+                    "Dia semana", FORMAT([Date],"dddd"),
+                    "Año mes NUM", YEAR([Date] *12 + MONTH([Date]-1)
+                ))
+
+Pasos:
+PRIMER PROBLEMA
+Sacar el Total importe facturado 
+ - SUMX(Facturacion,Facturacion[Horas Facturadas]*Facturacion[Precio Hora Final])
+ - Creacion de una columna calculada en PowerBi
+ - Creacion de una columna calculada en Python
+¿Cual seria mas rentable a nivel de eficiencia?
+
+SEGUNDO PROBLEMA
+Añadir los salarios de los trabajadores que estan en otra hoja y enlazalo bien
+
