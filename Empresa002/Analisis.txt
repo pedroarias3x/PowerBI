@@ -39,13 +39,33 @@ Calendario = ADDCOLUMNS(
                 ))
 
 Pasos:
-PRIMER PROBLEMA
+1. Reto
 Sacar el Total importe facturado 
  - SUMX(Facturacion,Facturacion[Horas Facturadas]*Facturacion[Precio Hora Final])
  - Creacion de una columna calculada en PowerBi
  - Creacion de una columna calculada en Python
 ¿Cual seria mas rentable a nivel de eficiencia?
 
-SEGUNDO PROBLEMA
+2. Reto - OK
 Añadir los salarios de los trabajadores que estan en otra hoja y enlazalo bien
+-Añadido como otra fuente de excel
+-Union por nombre de trabajador (ineficiente). Seria mejor por ID.
 
+
+3. Reto
+Ajustar los ejes para visualizar mejor la informacion
+
+4. Reto
+En el dashboard no se tiene que cambiar los totales, porque son totales
+
+5. Reto
+Hacer una hoja que filtre por trabajador
+
+6. Reto: Grafico evolutivo horas ejecutadas vs facturadas
+    - Valores en el eje y + mes en el eje X
+    -TODO: Filtrado por trabajador de la hoja en concreto
+
+7. Reto: Ordenar la tabla calendario, el nombre del mes por el numero del mes - OK
+    -   Se hace desde la parte de vista de tabla 
+    -   Ordenar por columna
+    -   Seleccionar ordenar columna nombre mes por numero mes
