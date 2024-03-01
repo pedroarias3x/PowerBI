@@ -16,14 +16,15 @@ Segmentadores
 -Trabajador
 
 Metricas mas interesantes
-- ¿Que trabajador ha facturado mas?
-- ¿Que trabajador es mas rentable?
-- ¿Que trabajador es menos rentable?
-- ¿Que cliente es más rentable?
-- ¿Que cliente tiene mayor facturacion?
+- ¿Que trabajador ha facturado mas? - OK
+- ¿Que trabajador es mas rentable? Imputaciones vs ejecucion 
+- ¿Que trabajador es menos rentable? Imputaciones vs ejecucion
+- ¿Que cliente es más rentable? - 
+- ¿Que cliente tiene mayor facturacion? - OK 
+- Promedio de horas por proyecto 
 
 
-¿Que % de subida puede ganarse?
+¿Que % de subida puede ganarse? - Calcular
 ¿Compensacion economica si llega a cierta facturacion?
 
 
@@ -52,20 +53,38 @@ Añadir los salarios de los trabajadores que estan en otra hoja y enlazalo bien
 -Union por nombre de trabajador (ineficiente). Seria mejor por ID.
 
 
-3. Reto
+3. Reto - OK
 Ajustar los ejes para visualizar mejor la informacion
+Arreglada la fecha para que coja la jerarquia y no la fecha como tal (no se visualizaba nada)
 
-4. Reto
+4. Reto - OK 
 En el dashboard no se tiene que cambiar los totales, porque son totales
+- Editados desde la seccion de FORMAT > Edit interactions
+
 
 5. Reto
-Hacer una hoja que filtre por trabajador
+Hacer una hoja que filtre por trabajador - OK
 
-6. Reto: Grafico evolutivo horas ejecutadas vs facturadas
+6. Reto: Grafico evolutivo horas ejecutadas vs facturadas - OK
     - Valores en el eje y + mes en el eje X
-    -TODO: Filtrado por trabajador de la hoja en concreto
+    - Filtrado por trabajador de la hoja en concreto 
+    Añadir un boton que redirija a la hoja del trabajador  -
 
 7. Reto: Ordenar la tabla calendario, el nombre del mes por el numero del mes - OK
     -   Se hace desde la parte de vista de tabla 
     -   Ordenar por columna
     -   Seleccionar ordenar columna nombre mes por numero mes
+
+8. Reto: imagenes de trabajadores -  Pte
+    -Creado excel con URLs y cargado complemento para hacerlo
+    -Añadido segmentador de excel
+    -TODO: Si no hay seleccion poner logo
+
+
+9. Reto: HAcer que cuando filtres en el segmentador, la informacion quede filtrada - OK
+    - Arreglado llendo a la parte de relaciones entre tablas y estableciendo el vinculo Salarios<->Facturacion en ambos sentidos
+    - Asi si filtro una, tambien se filtra la otra
+
+10. Metricas con indicadores
+
+11.Diseño
